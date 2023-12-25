@@ -1,0 +1,18 @@
+import React from "react";
+import FormInput from "../components/FormInput";
+
+const Form = () => {
+  return (
+    <div
+      id="form"
+      className="flex flex-col items-center justify-center bg-[#23627C] h-auto py-10"
+    >
+      <h1 className="flex p-4 sm:p-0 text-2xl sm:text-4xl font-bold text-white bg-[#23627C] mb-10 pt-4">
+        Direct een Gratis Offerte aanvragen bij Aannemersbedrijf Genevi
+      </h1>
+      <FormInput />
+    </div>
+  );
+};
+
+export default Form;
