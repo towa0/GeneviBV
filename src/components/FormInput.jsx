@@ -19,11 +19,13 @@ const FormInput = () => {
       //   },
       //   body: JSON.stringify(data),
       // });
-      const response = await fetch("http://localhost:3001/api/submit-form", {
+      const submitUrl =
+        "https://genevibackend-production.up.railway.app/api/submit-form";
+      console.log("Submitting form to:", submitUrl);
+      const response = await fetch(submitUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Access-Control-Allow-Origin": "*",
         },
         body: JSON.stringify(data),
       });
@@ -42,7 +44,9 @@ const FormInput = () => {
   return (
     <div>
       {submissionSuccess ? (
-        <p className="text-green-500 flex justify-center text-xl font-bold">Formulier succesvol ingediend!</p>
+        <p className="text-green-500 flex justify-center text-xl font-bold">
+          Formulier succesvol ingediend!
+        </p>
       ) : (
         <form
           onSubmit={handleSubmit(onSubmit)}

@@ -6,9 +6,8 @@ require("dotenv").config();
 const app = express();
 const port = 3001;
 const cors = require("cors");
-
-app.use(bodyParser.json());
 app.use(cors());
+app.use(bodyParser.json());
 
 app.post("/api/submit-form", async (req, res) => {
   if (formData.honeypot) {
@@ -20,12 +19,12 @@ app.post("/api/submit-form", async (req, res) => {
     const currentDate = new Date().toLocaleString();
     const emailBody = `
         Form submitted on: ${currentDate}
-        Name: ${formData.Naam}
+        Naam: ${formData.Naam}
         Email: ${formData.Email}
-        Residence: ${formData.Woonplaats}
-        Phone Number: ${formData["Telefoon nummer"]}
-        Interest: ${formData["Waar gaat uw interesse naar uit?"]}
-        Comments: ${formData.Opmerkingen}
+        Woonplaats: ${formData.Woonplaats}
+        Tel nummer: ${formData["Telefoon nummer"]}
+        Interesse: ${formData["Waar gaat uw interesse naar uit?"]}
+        Bericht: ${formData.Opmerkingen}
   `;
 
     const transporter = nodemailer.createTransport({
