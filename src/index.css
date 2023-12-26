@@ -16,3 +16,7 @@ body {
 #navbar {
   z-index: 1000;
 }
+
+[name="honeypot"] {
+  display: none;
+}

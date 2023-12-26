@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <nav
       id="navbar"
-      className=" w-full h-[8vh] sticky top-0 bg-[#23627C]/90 text-white"
+      className=" w-full h-auto py-2 sticky top-0 bg-[#23627C]/90 text-white"
     >
       <div className="sm:mx-10 flex items-center justify-between">
         <div className="flex items-center ">
@@ -26,21 +26,21 @@ const Navbar = () => {
             <img
               src={GeneviLogo}
               alt="Genevi Logo"
-              className="hidden lg:flex sm:h-[8vh] sm:w-[8vw] "
+              className="hidden lg:flex h-[8vh] w-[8vw]"
             />
           </Link>
         </div>
         <div className="hidden lg:flex items-center w-full justify-center space-x-10 ">
           <Link
             to="/"
-            className="font-bold hover:text-[#5299AB] duration-200 "
+            className="font-bold hover:text-[#5299AB] duration-200"
             onClick={closeMenu}
           >
             Home
           </Link>
           <Link
-            to="/"
-            className="font-bold hover:text-[#5299AB] duration-200 "
+            to="/afspraak"
+            className="font-bold hover:text-[#5299AB] duration-200"
             onClick={closeMenu}
           >
             Afspraak Maken
@@ -57,28 +57,14 @@ const Navbar = () => {
             className="font-bold hover:text-[#5299AB] duration-200 "
             onClick={closeMenu}
           >
-            Onze Projecten
-          </Link>
-          <Link
-            to="/"
-            className="font-bold hover:text-[#5299AB] duration-200 "
-            onClick={closeMenu}
-          >
             Over ons
           </Link>
           <Link
-            to="/"
+            to="/afspraak"
             className="font-bold hover:text-[#5299AB] duration-200 "
             onClick={closeMenu}
           >
             Offerte Aanvragen
-          </Link>
-          <Link
-            to="/"
-            className="font-bold hover:text-[#5299AB] duration-200 "
-            onClick={closeMenu}
-          >
-            Klantenervaringen
           </Link>
         </div>
         <Link to="/aaa">
@@ -87,8 +73,7 @@ const Navbar = () => {
           </button>
         </Link>
 
-        {/* mobile stuff */}
-
+        {/* mobile  */}
         <div className="lg:hidden w-full flex items-center justify-between">
           <Link to="/" className="flex items-center justify-start">
             <img
@@ -123,7 +108,7 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              to="/"
+              to="/afspraak"
               className="text-4xl font-bold duration-200 block"
               onClick={closeMenu}
             >
@@ -144,25 +129,11 @@ const Navbar = () => {
               Onze Projecten
             </Link>
             <Link
-              to="/"
-              className="text-4xl font-bold duration-200 block"
-              onClick={closeMenu}
-            >
-              Over ons
-            </Link>
-            <Link
-              to="/"
+              to="/afspraak"
               className="text-4xl font-bold duration-200 block"
               onClick={closeMenu}
             >
               Offerte Aanvragen
-            </Link>
-            <Link
-              to="/"
-              className="text-4xl font-bold duration-200 block"
-              onClick={closeMenu}
-            >
-              Klantenervaringen
             </Link>
             <Link
               to="/"

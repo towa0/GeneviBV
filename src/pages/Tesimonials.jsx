@@ -3,7 +3,7 @@ import { RiDoubleQuotesL } from "react-icons/ri";
 
 const Tesimonials = () => {
   return (
-    <section className="flex items-center mt-8">
+    <section id="reviews" className="flex items-center mt-8">
       <div className="p-4 mx-auto max-w-7xl">
         <div className="text-center mb-14">
           <h1 className="mb-4 text-2xl sm:text-5xl font-bold text-[#23627C]">
@@ -162,13 +162,23 @@ const Tesimonials = () => {
                       >
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                       </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        fill="currentColor"
+                        className="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
                     </span>
                   </div>
                 </div>
                 <p className="text-sm text-gray-600 ">
                   Ik ben zeer tevreden met het werk van Aannemersbedrijf Genevi.
                   Ze hebben mijn badkamer prachtig gerenoveerd en alles verliep
-                  soepel. Goede communicatie en een topresultaat. Vier sterren!
+                  soepel. Goede communicatie en een topresultaat.
                 </p>
               </div>
             </div>
@@ -240,7 +250,7 @@ const Tesimonials = () => {
                 <p className="text-sm text-gray-600 ">
                   Genevi heeft ons geholpen met een uitbreiding van onze woning.
                   Het team was professioneel en vriendelijk, en het project werd
-                  binnen het afgesproken budget afgerond. Vier sterren!
+                  binnen het afgesproken budget afgerond.
                 </p>
               </div>
             </div>

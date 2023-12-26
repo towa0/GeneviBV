@@ -7,6 +7,7 @@ import Form from "./Form";
 import Tesimonials from "./Tesimonials";
 import WhyUsSection from "./WhyUsSection";
 import Footer from "./Footer";
+import AfSpraakMaken from "./AfSpraakMaken";
 
 const HomePage = () => {
   return (

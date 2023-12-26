@@ -16,56 +16,44 @@ const Footer = () => {
                 </a>
                 <div className="w-16 mb-4 border-b-2 border-[#23627C] "></div>
                 <p className="text-base font-normal leading-6 lg:w-64 text-white">
-                  Lorem ipsum dor amet Lorem ipsum dor amet Lorem ipsum dor amet
-                  Lorem ipsum dor ame{" "}
+                  Welkom bij Genevi BV, uw partner voor totaalonderhoud en
+                  renovaties. Ons ervaren team specialiseert zich in het leveren
+                  van hoogwaardige diensten.
                 </p>
               </div>
               <div className="w-full px-4 md:w-1/4 lg:w-2/12 mb-7 lg:mb-0">
                 <h2 className="pb-2 text-lg font-bold text-white  ">
-                  Quick Links
+                  Snelle Links
                 </h2>
                 <div className="w-16 mb-4 border-b-2 border-[#23627C] "></div>
                 <ul className="text-white">
                   <li className="mb-4">
-                    <a href="#" className="inline-block text-base font-normal ">
+                    <a
+                      href="#"
+                      className="inline-block text-base font-normal hover:underline"
+                    >
                       Home
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a href="#" className="inline-block text-base font-normal ">
-                      About Us
+                    <a
+                      href="#"
+                      className="inline-block text-base font-normal hover:underline"
+                    >
+                      Over Ons
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a href="#" className="inline-block text-base font-normal ">
-                      Features
+                    <a
+                      href="/afspraak"
+                      className="inline-block text-base font-normal hover:underline"
+                    >
+                      Offerte Aanvragen
                     </a>
                   </li>
                 </ul>
               </div>
-              <div className="w-full px-4 mb-7 lg:mb-0 md:w-1/4 lg:w-2/12">
-                <h2 className="pb-2 text-lg font-bold text-white ">
-                  Features{" "}
-                </h2>
-                <div className="w-16 mb-4 border-b-2 border-[#23627C]"></div>
-                <ul className="text-white">
-                  <li className="mb-4">
-                    <a href="#" className="inline-block text-base font-normal ">
-                      Home
-                    </a>
-                  </li>
-                  <li className="mb-4">
-                    <a href="#" className="inline-block text-base font-normal ">
-                      About Us
-                    </a>
-                  </li>
-                  <li className="mb-4">
-                    <a href="#" className="inline-block text-base font-normal ">
-                      Features
-                    </a>
-                  </li>
-                </ul>
-              </div>
+
               <div className="w-full px-4 mb-2 lg:mb-0 md:w-1/3 lg:w-4/12">
                 <h2 className="pb-2 text-lg font-bold text-white ">
                   Contact Info
@@ -116,9 +104,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="px-4 py-6 bg-gray-300  ">
+      <div className="px-4 py-6 ">
         <div className="flex flex-wrap items-center justify-between max-w-6xl gap-4 mx-auto">
-          <div className="font-bold text-gray-600"> © Copyright 2022 . All Rights Reserved</div>
+          <div className="font-bold text-gray-600">
+            {" "}
+            © Copyright 2022 . All Rights Reserved
+          </div>
           <div className="flex items-center gap-3">
             <a href="#" className="mr-4 text-gray-600  hover:text-[#23627C]">
               <svg
@@ -144,7 +135,7 @@ const Footer = () => {
                 <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
               </svg>
             </a>
-            <a href="#" className="mr-4 text-gray-600  hover:text-red-600">
+            <a href="#" className="mr-4 text-gray-600  hover:text-[#23627C]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"

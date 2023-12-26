@@ -34,6 +34,11 @@ const LandingPage = () => {
               Vraag Offerte
             </button>
           </Link>
+          <Link to="reviews" smooth="true" offset={-90}>
+            <button className="border-2 border-[#23627C] ml-2 rounded-xl py-4 p-6 text-[#23627C] font-bold hover:bg-[#337794]/30 duration-200">
+              Bekijk Reviews
+            </button>
+          </Link>
         </div>
         <div className="hidden sm:flex">
           <img
