@@ -19,7 +19,7 @@ const FormInput = () => {
       //   },
       //   body: JSON.stringify(data),
       // });
-      const response = await fetch("https://genevibackend-production.up.railway.app/", {
+      const response = await fetch("https://genevibackend-production.up.railway.app/api/submit-form", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
