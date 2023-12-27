@@ -21,7 +21,7 @@ const FormInput = () => {
       // });
       const submitUrl =
         "https://genevibackend-production.up.railway.app/api/submit-form";
-      console.log("Submitting form to:", submitUrl);
+      // console.log("Submitting form to:", submitUrl);
       const response = await fetch(submitUrl, {
         method: "POST",
         headers: {
@@ -31,11 +31,11 @@ const FormInput = () => {
       });
 
       if (response.ok) {
-        console.log("Form submitted successfully");
+        // console.log("Form submitted successfully");
         setSubmissionSuccess(true);
         reset();
       } else {
-        console.error("Form submission failed");
+        // console.error("Form submission failed");
       }
     } catch (error) {
       console.error("Error submitting form:", error);
