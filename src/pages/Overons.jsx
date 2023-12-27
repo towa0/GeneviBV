@@ -27,6 +27,12 @@ const Overons = () => {
                 en renovaties. Bij Genevi BV geloven we dat uw gebouw een
                 waardevol bezit is dat de zorg en aandacht verdient om de
                 levensduur te verlengen en het naar nieuwe hoogten te tillen.
+                <a
+                  href="/onze-diensten"
+                  className="underline text-[#23627C] pl-1 cursor-pointer"
+                >
+                  onze diensten
+                </a>
               </p>
               <div class="flex flex-wrap items-center ">
                 <div class="w-[45vw] h-[22vh] sm:h-auto py-4 px-1 sm:px-4  sm:mb-4 sm:w-1/2 md:w-1/2 lg:mb-6 ">

@@ -46,7 +46,7 @@ const Navbar = () => {
             Afspraak Maken
           </Link>
           <Link
-            to="/"
+            to="/onze-diensten"
             className="font-bold hover:text-[#5299AB] duration-200 "
             onClick={closeMenu}
           >
@@ -67,7 +67,7 @@ const Navbar = () => {
             Offerte Aanvragen
           </Link>
         </div>
-        <Link to="/aaa">
+        <Link to="/afspraak">
           <button className="hidden lg:flex border bg-[#23627C] rounded-xl py-4 p-6 text-white font-bold hover:bg-[#337794] duration-200">
             Contact
           </button>
@@ -136,7 +136,7 @@ const Navbar = () => {
               Offerte Aanvragen
             </Link>
             <Link
-              to="/"
+              to="/afspraak"
               className="text-4xl font-bold duration-200 block"
               onClick={closeMenu}
             >

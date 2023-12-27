@@ -21,7 +21,7 @@ const LandingPage = () => {
           <p className="text-md my-8 text-gray-500 sm:w-[25vw]">
             Jouw betrouwbare partner in{" "}
             <Link to="/">
-              <span className="text-[#23627C] inline-block hover:underline cursor-pointer font-bold">
+              <span className="text-[#23627C] inline-block font-bold">
                 bouwprojecten
               </span>
             </Link>
