@@ -20,3 +20,17 @@ body {
 [name="honeypot"] {
   display: none;
 }
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #23627c;
+  border-radius: 9px;
+  border: 3px solid #23627c;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 6px;
+}

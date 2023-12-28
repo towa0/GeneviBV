@@ -12,6 +12,7 @@ import Footer from "./pages/Footer";
 import Navbar from "./pages/navbar";
 import AfSpraakMaken from "./pages/AfSpraakMaken";
 import OnzeDiensten from "./pages/OnzeDiensten";
+import OfferteAanvragen from "./pages/OfferteAanvragen";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
         <Route path="*" element={<ErrorPages />} />
         <Route path="/afspraak" element={<AfSpraakMakenPage />} />
         <Route path="/onze-diensten" element={<OnzeDienstenPage />} />
+        <Route path="/offerte-aanvragen" element={<OfferteAanvragenPage />} />
+        {/* TODO: make differnt form page instead of only afspraak same content, differnt img and text */}
       </Routes>
     </Router>
   );
@@ -48,6 +51,23 @@ const AfSpraakMakenPage = () => {
     <>
       <Navbar />
       <AfSpraakMaken />
+      <Footer />
+    </>
+  );
+};
+
+const OfferteAanvragenPage = () => {
+  const navigate = useNavigate();
+
+  // Scroll to the top when the component is mounted
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return (
+    <>
+      <Navbar />
+      <OfferteAanvragen />
       <Footer />
     </>
   );

@@ -52,15 +52,15 @@ const Navbar = () => {
           >
             Onze Diensten
           </Link>
-          <Link
+          {/* <Link
             to="/"
             className="font-bold hover:text-[#5299AB] duration-200 "
             onClick={closeMenu}
           >
             Over ons
-          </Link>
+          </Link> */}
           <Link
-            to="/afspraak"
+            to="/offerte-aanvragen"
             className="font-bold hover:text-[#5299AB] duration-200 "
             onClick={closeMenu}
           >
@@ -115,21 +115,14 @@ const Navbar = () => {
               Afspraak Maken
             </Link>
             <Link
-              to="/"
+              to="/onze-diensten"
               className="text-4xl font-bold duration-200 block"
               onClick={closeMenu}
             >
               Onze Diensten
             </Link>
             <Link
-              to="/"
-              className="text-4xl font-bold duration-200 block"
-              onClick={closeMenu}
-            >
-              Onze Projecten
-            </Link>
-            <Link
-              to="/afspraak"
+              to="/offerte-aanvragen"
               className="text-4xl font-bold duration-200 block"
               onClick={closeMenu}
             >

@@ -116,7 +116,7 @@ const OnzeDiensten = () => {
           <h1 className="text-2xl mb-4">
             Klaar? Klik hier onder voor een gratis offerte
           </h1>
-          <Link to="/afspraak">
+          <Link to="/offerte-aanvragen">
             <button className="border bg-[#23627C] rounded-xl py-4 p-6 text-white font-bold hover:bg-[#337794] duration-200">
               Vraag Offerte
             </button>
