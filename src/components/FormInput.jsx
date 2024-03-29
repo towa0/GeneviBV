@@ -9,8 +9,10 @@ const FormInput = () => {
     formState: { errors },
   } = useForm();
   const [submissionSuccess, setSubmissionSuccess] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const onSubmit = async (data) => {
+    setIsSubmitting(true);
     try {
       // const response = await fetch('http://localhost:3001/api/submit-form', {
       //   method: 'POST',
@@ -39,6 +41,8 @@ const FormInput = () => {
       }
     } catch (error) {
       console.error("Error submitting form:", error);
+    } finally {
+      setIsSubmitting(false);
     }
   };
   return (
@@ -92,27 +96,26 @@ const FormInput = () => {
             className="mb-4 p-2 w-full border border-gray-300 rounded-md "
           />
 
-          <select
-            {...register("Waar gaat uw interesse naar uit?", {
-              required: true,
-            })}
-            className="mb-4 p-2 w-full border border-gray-300 rounded-md "
-          >
-            <option value="" disabled selected>
-              Waar gaat uw interesse naar uit?
-            </option>
-            <option value="Interieur / Architectuur">
-              Interieur / Architectuur
-            </option>
-            <option value="Nieuwbouw">Nieuwbouw</option>
-            <option value="Verbouwen">Verbouwen</option>
-            <option value="Renovatie">Renovatie</option>
-            <option value="Zakelijk bedrijfsobject">
-              Zakelijk bedrijfsobject
-            </option>
-            <option value="Verduurzaming">Verduurzaming</option>
-            <option value="Anders">Anders</option>
-          </select>
+<select
+  {...register("Waar gaat uw interesse naar uit?", {
+    required: true,
+  })}
+  defaultValue=""  // Set the default value to the empty option's value
+  className="mb-4 p-2 w-full border border-gray-300 rounded-md"
+>
+  {/* This option acts as a placeholder and is not selectable once another option is chosen */}
+  <option value="" disabled>
+    Waar gaat uw interesse naar uit?
+  </option>
+  <option value="Interieur / Architectuur">Interieur / Architectuur</option>
+  <option value="Nieuwbouw">Nieuwbouw</option>
+  <option value="Verbouwen">Verbouwen</option>
+  <option value="Renovatie">Renovatie</option>
+  <option value="Zakelijk bedrijfsobject">Zakelijk bedrijfsobject</option>
+  <option value="Verduurzaming">Verduurzaming</option>
+  <option value="Anders">Anders</option>
+</select>
+
           <textarea
             {...register("Opmerkingen", { required: true })}
             placeholder="Uw bericht..."
@@ -122,7 +125,10 @@ const FormInput = () => {
           <input
             type="submit"
             value="Verzenden"
-            className="border bg-[#23627C] rounded-xl py-4 p-6 text-white font-bold hover:bg-[#337794] duration-200 cursor-pointer"
+            disabled={isSubmitting}
+            className={`border rounded-xl py-4 p-6 text-white font-bold duration-200 cursor-pointer ${
+              isSubmitting ? "bg-gray-500" : "bg-mainBlue hover:bg-mainHover"
+            }`}
           />
         </form>
       )}

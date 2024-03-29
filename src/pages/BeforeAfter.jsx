@@ -16,7 +16,7 @@ const BeforeAfterSection = () => {
     const { className, style, onClick } = props;
     return (
       <BsArrowLeftCircleFill
-        className={`${className} text-[#23627C] hover:text-[#23627C]/30`}
+        className={`${className} text-mainBlue hover:text-[#23627C]/30`}
         style={{ ...style, display: "block", fontSize: 30 }}
         onClick={onClick}
       />
@@ -27,7 +27,7 @@ const BeforeAfterSection = () => {
     const { className, style, onClick } = props;
     return (
       <BsArrowRightCircleFill
-        className={`${className} text-[#23627C] hover:text-[#23627C]/30`}
+        className={`${className} text-mainBlue hover:text-[#23627C]/30`}
         style={{ ...style, display: "block", fontSize: 30 }}
         onClick={onClick}
       />
@@ -60,7 +60,7 @@ const BeforeAfterSection = () => {
     <section className="py-16 max-w-7xl mx-auto">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-[#212121] md:text-5xl mb-8 text-center">
-          Vóór <span className="text-[#23627C]">en Na de Transformatie</span>
+          Vóór <span className="text-mainBlue">en Na de Transformatie</span>
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 mt-10">
           <Slider {...settings} className="sm:w-[25vw] w-[50vw] mx-auto mb-10 sm:mb-0">

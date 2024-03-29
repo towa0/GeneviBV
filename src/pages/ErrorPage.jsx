@@ -21,7 +21,7 @@ const ErrorPage = () => {
                   <div className="flex flex-wrap items-center justify-start">
                     <a
                       href="/"
-                      className="w-full px-8 py-4 mb-8 mr-0 text-base font-medium text-gray-100 uppercase bg-[#23627C] rounded-full lg:w-auto hover:bg-[#23627C]/80 lg:mb-0 lg:mr-4 md:w-full "
+                      className="w-full px-8 py-4 mb-8 mr-0 text-base font-medium text-gray-100 uppercase bg-mainBlue rounded-xl lg:w-auto hover:bg-mainHover lg:mb-0 lg:mr-4 md:w-full "
                     >
                       Home
                     </a>

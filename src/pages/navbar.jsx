@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrFormClose } from "react-icons/gr";
-import GeneviLogo from "../assets/GeneviNavLogo.png";
+import GeneviLogo from "../assets/GeneviLogo2.png";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,78 +16,75 @@ const Navbar = () => {
     setMenuOpen(false);
   };
 
+  const linkClass = ({ isActive }) =>
+    isActive
+      ? "font-bold text-mainHover duration-200"
+      : "font-bold hover:text-[#5299AB] duration-200";
+
   return (
     <nav
       id="navbar"
-      className=" w-full h-auto py-2 sticky top-0 bg-[#23627C]/90 text-white"
+      className=" w-full h-auto py-2 sticky top-0 bg-[#e5e5e5] text-mainBlue shadow-lg"
     >
       <div className="sm:mx-10 flex items-center justify-between">
         <div className="flex items-center ">
-          <Link to="/" className="flex items-center">
+          <NavLink to="/" className="flex items-center">
             <img
               src={GeneviLogo}
-              alt="Genevi Logo"
-              className="hidden lg:flex h-[8vh] w-[8vw]"
+              alt="GeneviLogo"
+              className="hidden lg:flex h-auto w-[9vw]"
             />
-          </Link>
+          </NavLink>
         </div>
         <div className="hidden lg:flex items-center w-full justify-center space-x-10 ">
-          <Link
-            to="/"
-            className="font-bold hover:text-[#5299AB] duration-200"
-            onClick={closeMenu}
-          >
+          <NavLink to="/" className={linkClass} onClick={closeMenu}>
             Home
-          </Link>
-          <Link
-            to="/afspraak"
-            className="font-bold hover:text-[#5299AB] duration-200"
-            onClick={closeMenu}
-          >
+          </NavLink>
+          <NavLink to="/afspraak" className={linkClass} onClick={closeMenu}>
             Afspraak Maken
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/onze-diensten"
-            className="font-bold hover:text-[#5299AB] duration-200 "
+            className={linkClass}
             onClick={closeMenu}
           >
             Onze Diensten
-          </Link>
-          {/* <Link
+          </NavLink>
+          {/* <NavLink
             to="/"
             className="font-bold hover:text-[#5299AB] duration-200 "
             onClick={closeMenu}
           >
             Over ons
-          </Link> */}
-          <Link
+          </NavLink> */}
+          <NavLink
             to="/offerte-aanvragen"
-            className="font-bold hover:text-[#5299AB] duration-200 "
+            className={linkClass}
             onClick={closeMenu}
           >
             Offerte Aanvragen
-          </Link>
+          </NavLink>
         </div>
-        <Link to="/afspraak">
+        <NavLink to="/afspraak">
           <button className="hidden lg:flex border bg-[#23627C] rounded-xl py-4 p-6 text-white font-bold hover:bg-[#337794] duration-200">
             Contact
           </button>
-        </Link>
+        </NavLink>
 
         {/* mobile  */}
         <div className="lg:hidden w-full flex items-center justify-between">
-          <Link to="/" className="flex items-center justify-start">
+          <NavLink to="/" className="flex items-center justify-start">
             <img
               src={GeneviLogo}
               alt="Genevi Logo"
               className="w-auto h-[40vh] max-h-16 ml-4"
             />
-          </Link>
+          </NavLink>
           <button className="focus:outline-none" onClick={toggleMenu}>
             {menuOpen ? (
               <GrFormClose size={40} />
             ) : (
-              <GiHamburgerMenu size={35} className="text-white mr-12" />
+              <GiHamburgerMenu size={35} className="text-mainBlue mr-12" />
             )}
           </button>
         </div>
@@ -94,47 +92,47 @@ const Navbar = () => {
 
       {menuOpen && (
         <div className="lg:hidden fixed inset-0 z-50 transform transition-transform ease-in duration-300">
-          <div className="z-60 h-[100vh] pt-4 pl-4 space-y-8 bg-[#23627C] text-white">
+          <div className="z-60 h-[100vh] pt-4 pl-4 space-y-8 bg-mainBlue text-white">
             <div className="flex justify-end">
               <button className=" focus:outline-none" onClick={toggleMenu}>
                 <GrFormClose size={50} className="text-white mr-10 " />
               </button>
             </div>
-            <Link
+            <NavLink
               to="/"
               className="text-4xl font-bold duration-200 block"
               onClick={closeMenu}
             >
               Home
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/afspraak"
               className="text-4xl font-bold duration-200 block"
               onClick={closeMenu}
             >
               Afspraak Maken
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/onze-diensten"
               className="text-4xl font-bold duration-200 block"
               onClick={closeMenu}
             >
               Onze Diensten
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/offerte-aanvragen"
               className="text-4xl font-bold duration-200 block"
               onClick={closeMenu}
             >
               Offerte Aanvragen
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/afspraak"
               className="text-4xl font-bold duration-200 block"
               onClick={closeMenu}
             >
               Contact
-            </Link>
+            </NavLink>
           </div>
         </div>
       )}
