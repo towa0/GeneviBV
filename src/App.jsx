@@ -9,7 +9,7 @@ import {
 import HomePage from "./pages/HomePage";
 import ErrorPage from "./pages/ErrorPage";
 import Footer from "./pages/Footer";
-import Navbar from "./pages/navbar";
+import Navbar from "./pages/Navbar";
 import AfSpraakMaken from "./pages/AfSpraakMaken";
 import OnzeDiensten from "./pages/OnzeDiensten";
 import OfferteAanvragen from "./pages/OfferteAanvragen";
