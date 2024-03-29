@@ -26,6 +26,7 @@ const LandingPage = () => {
     );
   }, []);
 
+  // fix
   return (
     <section className="flex flex-col items-center justify-center h-screen max-w-7xl mx-auto">
       <div className="sm:hidden w-full mb-8">
