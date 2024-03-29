@@ -40,7 +40,7 @@ const LandingPage = () => {
         <div className="text-center sm:text-left pr-8">
           <h1 className="text-3xl sm:text-7xl font-bold text-[#212121] landing-header">
             Welkom bij{" "}
-            <span className="text-mainBlue inline-block">Genevi.nl</span>
+            <span className="text-mainBlue inline-block">GeneviBV</span>
           </h1>
           <p className="text-md my-8 text-gray-500 sm:w-[25vw] landing-paragraph">
             Jouw betrouwbare partner in{" "}
