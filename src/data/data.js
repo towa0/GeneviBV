@@ -7,6 +7,10 @@ import {
 } from "react-icons/fa";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 
+import TrapRenovatieImg from "../assets/Traprenovaties.jpg";
+import KeukenRenovatiesImg from "../assets/keukenrenovaties.jpg";
+import Huisrenovaties from "../assets/Huisrenovaties.jpg";
+
 export const offerItems = [
   {
     id: 1,
@@ -21,16 +25,14 @@ export const offerItems = [
     title: "Traprenovaties",
     description:
       "Onze expertise omvat het vernieuwen en renoveren van trappen, waarbij we zowel esthetische als functionele verbeteringen aanbrengen.",
-    imageUrl:
-      "https://images.pexels.com/photos/8005368/pexels-photo-8005368.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    imageUrl: TrapRenovatieImg,
   },
   {
     id: 3,
     title: "Badkamer/keukenrenovaties:",
     description:
       "Wij bieden complete badkamer en/of keukenrenovaties, waarbij we oude badkamers/keukens transformeren tot moderne, functionele en esthetisch aantrekkelijke ruimtes.",
-    imageUrl:
-      "https://images.pexels.com/photos/5716303/pexels-photo-5716303.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    imageUrl: KeukenRenovatiesImg,
   },
   {
     id: 4,
@@ -38,11 +40,11 @@ export const offerItems = [
     description:
       "Wij verzorgen hoogwaardig schilderwerk voor zowel interieurs als exterieurs, met aandacht voor detail en duurzaamheid.",
     imageUrl:
-      "https://images.pexels.com/photos/955395/pexels-photo-955395.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/7218525/pexels-photo-7218525.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: 5,
-    title: "Schilderwerken",
+    title: "Schoonmaakdiensten",
     description:
       "Onze schoonmaakdiensten omvatten alles van regulier onderhoud tot dieptereiniging, met een focus op hygiëne, kwaliteit en klanttevredenheid.",
     imageUrl:
@@ -50,7 +52,7 @@ export const offerItems = [
   },
   {
     id: 6,
-    title: "Schoonmaakwerkzaamheden",
+    title: "Timmerwerkzaamheden",
     description:
       "Van kleine reparaties tot op maat gemaakte meubelstukken, ons timmerwerk brengt vakmanschap en precisie naar elke ruimte.",
     imageUrl:
@@ -61,8 +63,7 @@ export const offerItems = [
     title: "Complete huisrenovaties",
     description:
       "Bij Genevi BV transformeren we uw huis met zorg en vakmanschap. Als specialist in volledige huisrenovaties bieden we een allesomvattende aanpak, van ontwerp tot oplevering. Ons team van ervaren professionals zorgt voor een naadloze renovatie die uw woonruimte nieuw leven inblaast. Kies voor kwaliteit en betrouwbaarheid met Genevi BV en geniet van uw droomhuis",
-    imageUrl:
-      "https://images.pexels.com/photos/804392/pexels-photo-804392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    imageUrl: Huisrenovaties,
   },
 ];
 
