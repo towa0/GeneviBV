@@ -7,12 +7,11 @@ const WhyUsSection = () => {
       <h2 className="text-3xl sm:text-5xl font-bold text-[#212121] mb-14 text-center">
         Waarom <span className="text-mainBlue">Genevi BV?</span>
       </h2>
-      {/* Adjust the grid to be more responsive and auto-adjusting */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {whyUsItems.map((item) => (
           <div
             key={item.id}
-            className="bg-white border border-mainBlue p-8 rounded-md shadow-lg flex flex-col justify-between" // Added flex styles for content spacing
+            className="bg-white border-2 rounded-xl p-8 shadow-lg flex flex-col justify-between" // Added flex styles for content spacing
           >
             <h3 className="text-xl font-bold text-mainBlue mb-4 flex items-center justify-center">
               {React.createElement(item.icon, {

@@ -58,10 +58,15 @@ const Overons = () => {
                 </h1>
               </div>
               <p className="px-4 mb-10 text-base leading-7 text-gray-500">
-                Welkom bij Genevi BV, uw toegewijde partner voor totaalonderhoud
-                en renovaties. Bij Genevi BV geloven we dat uw gebouw een
-                waardevol bezit is dat de zorg en aandacht verdient om de
-                levensduur te verlengen en het naar nieuwe hoogten te tillen.
+                Welkom bij Genevi BV, uw betrouwbare aannemersbedrijf in
+                Zuid-Holland. Ons team van 9 gespecialiseerde professionals
+                staat voor u klaar met een breed scala aan expertises. Van
+                advies en ontwerp tot uitvoering en nazorg, wij bieden complete
+                en op maat gemaakte oplossingen voor al uw bouw- en
+                renovatieprojecten. Dankzij onze diverse specialisaties kunnen
+                we elk aspect van uw project naar een hoger niveau tillen.
+                Ontdek wat Genevi BV voor u kan betekenen en ervaar de kwaliteit
+                en toewijding van ons team in heel Zuid-Holland.
                 <a
                   href="/onze-diensten"
                   className="underline text-mainBlue pl-1 cursor-pointer"

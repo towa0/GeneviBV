@@ -41,8 +41,6 @@ const ErrorPages = () => {
 
 const AfSpraakMakenPage = () => {
   const navigate = useNavigate();
-
-  // Scroll to the top when the component is mounted
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -58,8 +56,6 @@ const AfSpraakMakenPage = () => {
 
 const OfferteAanvragenPage = () => {
   const navigate = useNavigate();
-
-  // Scroll to the top when the component is mounted
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -73,7 +69,6 @@ const OfferteAanvragenPage = () => {
   );
 };
 
-// for scroll
 const OnzeDienstenPage = () => {
   const navigate = useNavigate();
 

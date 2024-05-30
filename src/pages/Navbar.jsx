@@ -17,7 +17,7 @@ const Navbar = () => {
 
   const linkClass = ({ isActive }) =>
     isActive
-      ? "font-bold text-mainHover duration-200"
+      ? "font-bold text-[#5299AB] duration-200"
       : "font-bold hover:text-[#5299AB] duration-200";
 
   return (

@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { gsap } from "gsap";
+import Button from "../components/Button";
 
 const LandingPage = () => {
   useEffect(() => {
@@ -53,16 +54,20 @@ const LandingPage = () => {
             en service. Samen bouwen we aan je dromen en realiseren we duurzame
             oplossingen voor al jouw bouwbehoeften.
           </p>
-          <Link to="form" smooth="true" offset={-70}>
-            <button className="landing-button border bg-mainBlue rounded-xl py-4 p-6 text-white font-bold hover:bg-[#337794] duration-200">
-              Vraag Offerte
-            </button>
-          </Link>
-          <Link to="reviews" smooth="true" offset={-90}>
-            <button className="landing-button border-2 border-mainBlue ml-2 rounded-xl py-4 p-6 text-mainBlue font-bold hover:bg-[#337794]/30 duration-200">
-              Bekijk Reviews
-            </button>
-          </Link>
+          <div className="space-x-2">
+            <Link to="form" smooth="true" offset={-70}>
+              <button className="rounded-xl p-5 duration-200 bg-mainBlue text-white font-bold hover:bg-mainBlue/70">
+                Vraag Offerte
+              </button>
+            </Link>
+            <Link to="reviews" smooth="true" offset={-90}>
+              <button className="rounded-xl p-5 duration-200 border-2 border-mainBlue text-mainBlue hover:text-white font-bold hover:bg-mainBlue">
+                Bekijk Reviews
+              </button>
+            </Link>
+            {/* <Button label={"Vraag Offerte"} primary={true} />
+            <Button primary={false} label={"Bekijk Reviews"} /> */}
+          </div>
         </div>
         <div className="hidden sm:flex">
           <img

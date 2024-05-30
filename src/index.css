@@ -5,12 +5,14 @@
 /* light to dark */
 /* #859CA8 #5299AB #23627C    */
 
-:root {
-  --primary-color: #0c82ff;
-}
-
+/* #23627C <- old theme color */
+/* #003dd6 <- new blue (test) */
 body {
   background-color: #e5e5e5;
+}
+
+* {
+  scroll-behavior: smooth;
 }
 
 #navbar {
@@ -26,9 +28,9 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #23627c;
+  background-color: #23627C;
   border-radius: 9px;
-  border: 3px solid #23627c;
+  border: 3px solid #23627C;
 }
 
 ::-webkit-scrollbar-track {

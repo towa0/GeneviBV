@@ -10,33 +10,33 @@ import { FaMagnifyingGlass } from "react-icons/fa6";
 export const offerItems = [
   {
     id: 1,
-    title: "Loodgieterswerk",
+    title: "Woningen SNF proef maken",
     description:
-      "Voor het oplossen van lekkages, installeren van nieuwe sanitairvoorzieningen of het renoveren van badkamers staan wij paraat.",
+      "Wij zorgen ervoor dat woningen voldoen aan de eisen van de Stichting Normering Flexwonen (SNF), waardoor ze geschikt zijn voor flexibele huisvesting",
     imageUrl:
       "https://images.pexels.com/photos/6419128/pexels-photo-6419128.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     id: 2,
-    title: "Elektra Werk",
+    title: "Traprenovaties",
     description:
-      "Moderne elektrische voorzieningen zijn essentieel. Wij bieden van deskundig elektrawerk tot innovatieve verlichting.",
+      "Onze expertise omvat het vernieuwen en renoveren van trappen, waarbij we zowel esthetische als functionele verbeteringen aanbrengen.",
     imageUrl:
       "https://images.pexels.com/photos/8005368/pexels-photo-8005368.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     id: 3,
-    title: "Vloer- en Plafondrenovaties",
+    title: "Badkamer/keukenrenovaties:",
     description:
-      "Transformeer uw leefruimte met onze vloer- en plafondrenovatieservices, biedend diverse materialen en ontwerpen voor uw stijl.",
+      "Wij bieden complete badkamer en/of keukenrenovaties, waarbij we oude badkamers/keukens transformeren tot moderne, functionele en esthetisch aantrekkelijke ruimtes.",
     imageUrl:
       "https://images.pexels.com/photos/5716303/pexels-photo-5716303.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     id: 4,
-    title: "Persoonlijke Klantgerichtheid",
+    title: "Schilderwerk",
     description:
-      "Bij Genevi BV, luisteren wij naar uw wensen, zorgend dat ons werk voldoet aan uw verwachtingen voor tevredenheid.",
+      "Wij verzorgen hoogwaardig schilderwerk voor zowel interieurs als exterieurs, met aandacht voor detail en duurzaamheid.",
     imageUrl:
       "https://images.pexels.com/photos/955395/pexels-photo-955395.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
@@ -44,17 +44,25 @@ export const offerItems = [
     id: 5,
     title: "Schilderwerken",
     description:
-      "Ons deskundige team staat klaar om zowel interieurs als exterieurs nieuw leven in te blazen met hoogwaardig schilderwerk.",
+      "Onze schoonmaakdiensten omvatten alles van regulier onderhoud tot dieptereiniging, met een focus op hygiëne, kwaliteit en klanttevredenheid.",
     imageUrl:
       "https://images.pexels.com/photos/6474471/pexels-photo-6474471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     id: 6,
-    title: "Timmerwerk",
+    title: "Schoonmaakwerkzaamheden",
     description:
       "Van kleine reparaties tot op maat gemaakte meubelstukken, ons timmerwerk brengt vakmanschap en precisie naar elke ruimte.",
     imageUrl:
       "https://images.pexels.com/photos/1094767/pexels-photo-1094767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    id: 7,
+    title: "Complete huisrenovaties",
+    description:
+      "Bij Genevi BV transformeren we uw huis met zorg en vakmanschap. Als specialist in volledige huisrenovaties bieden we een allesomvattende aanpak, van ontwerp tot oplevering. Ons team van ervaren professionals zorgt voor een naadloze renovatie die uw woonruimte nieuw leven inblaast. Kies voor kwaliteit en betrouwbaarheid met Genevi BV en geniet van uw droomhuis",
+    imageUrl:
+      "https://images.pexels.com/photos/804392/pexels-photo-804392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
 ];
 
@@ -107,7 +115,7 @@ export const testimonials = [
   {
     id: 1,
     name: "Peter Vermeer",
-    image: "https://i.stack.imgur.com/dr5qp.jpg",
+    image: "https://ia601703.us.archive.org/6/items/twitter-default-pfp/e.png",
     rating: 5,
     content:
       "Genevi heeft mijn huisrenovatie tot in de puntjes verzorgd. Vakmanschap, betrouwbaarheid en een vriendelijke aanpak. Ze leverden zelfs eerder op dan verwacht. Vijf sterren!",
@@ -141,7 +149,7 @@ export const testimonials = [
   {
     id: 5,
     name: "Johan de Vries",
-    image: "https://i.stack.imgur.com/dr5qp.jpg",
+    image: "https://ia601703.us.archive.org/6/items/twitter-default-pfp/e.png",
     rating: 4,
     content:
       "Aannemersbedrijf Genevi heeft onze keuken gerenoveerd en we zijn over het algemeen tevreden met het resultaat. Het project werd op tijd voltooid, en het team was behulpzaam bij het oplossen van eventuele problemen.",

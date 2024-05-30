@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         mainBlue: "#23627C",
-        mainHover: "#5299AB",
+        mainHover: "#23627C",
       },
     },
   },

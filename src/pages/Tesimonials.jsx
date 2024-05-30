@@ -26,7 +26,7 @@ const Tesimonials = () => {
             {testimonials.slice(0, visibleTestimonials).map((testimonial) => (
               <div
                 key={testimonial.id}
-                className="mb-8 rounded shadow-lg bg-white cursor-pointer hover:scale-105 duration-200"
+                className="mb-8 shadow-lg rounded-xl border-2 bg-white cursor-pointer hover:scale-105 duration-200"
               >
                 <div className="relative z-20 p-8">
                   <div className="flex items-center mb-5 gap-x-4">
